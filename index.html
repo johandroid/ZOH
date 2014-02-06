@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Retenedor de orden cero</title>
+	<meta charset="ISO-8859-1">
+	<title>Retenedor de orden cero</title>
+	<link rel="stylesheet" href="css/estilo.css" type="text/css">
+	<link rel="stylesheet" href="css/jQueryMobile.css" type="text/css">
+	<script src="js/jQuery.js"></script>
+	<script src="js/jQueryMobile.js"></script>
+	<script src="js/main.js"></script>
+	
 </head>
 <body>
-<center><h1>Bienvenido al retenedor de orden cero simple</h1></center>
+<div data-role="page">
+<header><div align="center"><h1 style="font-size: 23pt;margin: 10px;"><strong>Bienvenido al retenedor de orden cero simple</strong></h1></div></header>
 <hr />
 <hr />
+<p>
+	<h2>Siendo el sistema:</h2>
+	<h3>x' = <strong>A</strong>x + <strong>B</strong>u</h3>
+	<h3>y= <strong>C</strong>x + <strong>D</strong>u</h3>
+</p>
 <form>
-	<div><label title="Introduce A"></label><input type="number" name="ValorA" /></div>
-	<div><label title="Introduce B"></label><input type="number" name="ValorB" /></div>
-	<div><label title="Introduce C"></label><input type="number" name="ValorC" /></div>
-	<div><label title="Introduce D"></label><input type="number" name="ValorD" /></div>
+	<div><label title="Introduce A">A= </label><input id="VA" type="text" name="ValorA" /></div>
+	<div><label title="Introduce B">B= </label><input id="VB" type="text" name="ValorB" /></div>
+	<div><label title="Introduce C">C= </label><input id="VC" type="text" name="ValorC" /></div>
+	<div><label title="Introduce D">D= </label><input id="VD" type="text" name="ValorD" /></div>
+	<div><label title="Introduce el periodo de muestreo">Ts=</label><input id="VT" type="text" name="Ts" /></div>
+	<input type="button" name="Calculo" onclick="calculo()" value="Calculo"/>
 </form>
-
+<p>
+	El sistema discretizado resultante es este:
+</p>
+<div align="center">
+	<p>
+		X(k+1)= <span id="ValorAd">Ad</span> <strong>x(k)</strong>  +  <span id="ValorBd">Bd</span> <strong>u(k)</strong>
+	</p>
+</div>
+<footer data-role="footer" align="center">Powered By --> JohanDroid</footer>
+</div>
 </body>
 </html>
