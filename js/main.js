@@ -1,12 +1,10 @@
-var a=$("#VA").val();
-var b=$("#VB").val();
-var c=$("#VC").val();
-var d=$("#VD").val();
-var ts=$("#VT").val();
-
 function calculo() 
 {	
-		
+	a=($("#VA").val()>0)?$("#VA").val():0;
+	b=($("#VB").val()>0)?$("#VB").val():0;
+	c=($("#VC").val()>0)?$("#VC").val():0;
+	d=($("#VD").val()>0)?$("#VD").val():0;
+	ts=($("#VT").val()>0)?$("#VT").val():0;
 	
 	a*=ts;
 	b*=ts;
