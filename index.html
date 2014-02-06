@@ -11,8 +11,9 @@
 	
 </head>
 <body>
-<div data-role="page">
+<div data-role="page" data-theme="a">
 <header><div align="center"><h1 style="font-size: 23pt;margin: 10px;"><strong>Bienvenido al retenedor de orden cero simple</strong></h1></div></header>
+<div data-role="content">
 <hr />
 <hr />
 <p>
@@ -21,11 +22,11 @@
 	<h3>y= <strong>C</strong>x + <strong>D</strong>u</h3>
 </p>
 <form>
-	<div><label title="Introduce A">A= </label><input id="VA" type="text" name="ValorA" /></div>
-	<div><label title="Introduce B">B= </label><input id="VB" type="text" name="ValorB" /></div>
-	<div><label title="Introduce C">C= </label><input id="VC" type="text" name="ValorC" /></div>
-	<div><label title="Introduce D">D= </label><input id="VD" type="text" name="ValorD" /></div>
-	<div><label title="Introduce el periodo de muestreo">Ts=</label><input id="VT" type="text" name="Ts" /></div>
+	<div class="ui-field-contain"><label title="Introduce A">A= </label><input id="VA" type="text" name="ValorA" /></div>
+	<div class="ui-field-contain"><label title="Introduce B">B= </label><input id="VB" type="text" name="ValorB" /></div>
+	<div class="ui-field-contain"><label title="Introduce C">C= </label><input id="VC" type="text" name="ValorC" /></div>
+	<div class="ui-field-contain"><label title="Introduce D">D= </label><input id="VD" type="text" name="ValorD" /></div>
+	<div class="ui-field-contain"><label title="Introduce el periodo de muestreo">Ts=</label><input id="VT" type="text" name="Ts" /></div>
 	<input type="button" name="Calculo" onclick="calculo()" value="Calculo"/>
 </form>
 <p>
@@ -35,6 +36,7 @@
 	<p>
 		X(k+1)= <span id="ValorAd">Ad</span> <strong>x(k)</strong>  +  <span id="ValorBd">Bd</span> <strong>u(k)</strong>
 	</p>
+</div>
 </div>
 <footer data-role="footer" align="center">Powered By --> JohanDroid</footer>
 </div>
